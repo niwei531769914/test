@@ -3,8 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <script src="jquery.min.js"></script>
 </head>
 <body>
 <div class="app">你好</div>
 </body>
+<script type="text/javascript">
+    $(function () {
+        var Array = ["a","b","c","d"];
+        var NewArray = {};
+        Array.map(function (value,index) {
+            NewArray[value] = index;
+        })
+        console.log(NewArray["a"]);
+        console.log(2333);
+    })
+</script>
 </html>
